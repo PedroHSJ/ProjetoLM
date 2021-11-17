@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 header{
@@ -20,11 +21,11 @@ header{
     background-color: rgba(0, 0, 0, 0.3);
 
     height: 100vh;
+
 }
 
 header h1{
     font-size: 24pt;
-    font-family: Helvetica, sans-serif, sans-serif;
     letter-spacing: 2px;
 
 
