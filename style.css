@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    
+    background-image: url(imagens/jp.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+}
+
+#filtro{
+    background-color: rgba(0, 0, 0, 0.3);
+
+    height: 100vh;
+}
+
+header h1{
+    font-size: 24pt;
+    font-family: Helvetica, sans-serif, sans-serif;
+    letter-spacing: 2px;
+
+
+    line-height: 60px;
+    height: 60px;
+
+    background-color: #111;
+    color: #fff;
+}
+
+header h2{
+    font-size: 54pt;
+
+    margin-top: 100px;
+
+    color: #fff;
+}
+
+button {
+    padding: 0.9em 2em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16pt;
+    color: #ddd;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 3px;
+   }
+   
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fff;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+button:hover::before {
+    width: 105%;
+   }
+   
+button:hover {
+    color: #000;
+    cursor: pointer;
+   }
+   
+ul{
+       display:none;
+   }
+
+@media (min-width:1024px){
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        list-style: none;
+
+        font-size: 20pt;
+
+        margin-top: 220px;
+    }
+
+    header ul a{
+        text-decoration: none;
+
+        color: #fff;
+    }
+
+    header ul a:hover{
+        color: #ccc;
+        transition: all 0.2s;
+    }
+}
