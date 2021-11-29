@@ -147,7 +147,7 @@ iframe{
 .card img{
     width: 100%;
     z-index: 1;
-
+    border-radius: 5px;
     
 }
 
