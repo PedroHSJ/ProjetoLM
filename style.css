@@ -117,7 +117,7 @@ section{
 }
 
 iframe{
-    width: 80%;
+    width: 85%;
 
     margin: 15px auto;
 
@@ -214,6 +214,7 @@ i{
 }
 
 @media (min-width:1024px){
+ 
     header ul{
         display: flex;
         flex-direction: row;
@@ -253,6 +254,19 @@ i{
     .titulo-h1{
         font-size: 26pt;
     }
+
+    section{
+        padding: 20px 100px;
+    }
+
+    .card img:hover{
+        transform: scale(1.0000001);
+        transition: all 0.5s;
+
+        box-shadow: 5px 5px 15px #888;
+        
+    }
+
     #back:hover{
         background-color: rgba(0, 0, 0, 0.95);
 
